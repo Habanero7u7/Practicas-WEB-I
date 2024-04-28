@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Estructura Basica</title>
+        <link rel="stylesheet" href="/Css/Style.css">
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="logotipo">
+                <img src="/Imagenes/Logo/Logo.png" alt="Logotipo de empresa">
+            </div>
+            <h1>Bienvenidos a mi pagina web</h1>
+        </header>
+
+            <nav>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="/Paginas/Index.html">Inicio</a></li>
+                    <li><a href="/Paginas/ComoLlegar.html">Como llegar</a></li>
+                    <li><a href="/Paginas/Registro.html">Registro</a></li>
+                    <li><a href="/Paginas/PagFav.html">Paginas Favoritas</a></li>
+                    <li><a href="/Paginas/Pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </nav>
+
+            <div>
+
+                <h2>Validacion de Registro</h2>
+                
+                <br>
+                
+                <form id="registroForm" onsubmit="return validarFormulario()">
+                    <label for="nombreUsuario">Nombre de Usuario:</label>
+                    <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+                    <br>
+        
+                    <label for="nombreCompleto">Nombre Completo:</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                    <br>
+        
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" id="contrasenia" name="contrasenia" required>
+                    <br>
+        
+                    <label for="repetirContrasenia">Repetir Contraseña:</label>
+                    <input type="password" id="repetirContrasenia" name="repetirContrasenia" required>
+                    <br>
+        
+                    <label for="correoElectronico">Correo Electrónico:</label>
+                    <input type="email" id="correoElectronico" name="correoElectronico" required>
+                    <br>
+        
+                    <label>Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+                    <input type="radio" id="femenino" name="sexo" value="femenino"> Femenino
+                    <input type="radio" id="otro" name="sexo" value="otro"> Otro
+                    <br>
+        
+                    <label>Hobbies:</label>
+                    <input type="checkbox" id="hobby1" name="hobbies" value="hobby1"> Hobby 1
+                    <input type="checkbox" id="hobby2" name="hobbies" value="hobby2"> Hobby 2
+                    <input type="checkbox" id="hobby3" name="hobbies" value="hobby3"> Hobby 3
+                    <br>
+        
+                    <label for="estadoCivil">Estado Civil:</label>
+                    <select id="estadoCivil" name="estadoCivil">
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viudo">Viudo</option>
+                    </select>
+                    <br>
+        
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" required>
+                    <br>
+        
+                    <label for="numeroInterior">Número Interior:</label>
+                    <input type="text" id="numeroInterior" name="numeroInterior" required>
+                    <br>
+        
+                    <label for="colonia">Colonia:</label>
+                    <input type="text" id="colonia" name="colonia" required>
+                    <br>
+        
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required>
+                    <br>
+        
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" required>
+                    <br>
+        
+                    <label for="codigoPostal">Código Postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" required>
+                    <br>
+        
+                    <button type="submit">Registrarse</button>
+                    
+                    <script src="/Scripts/Validacion.js"></script>
+                </form>
+
+                <div id="resultadoRegistro"></div>
+
+            <br> <hr>
+
+            <div id="PagAnt">
+                
+                <a href="/Paginas/SubPaginasScript/Examen.html"> <- Examen </a>
+            </div>
+
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+
+    </body>
+</html>

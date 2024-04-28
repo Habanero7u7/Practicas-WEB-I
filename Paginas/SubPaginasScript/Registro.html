@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Estructura Basica</title>
+        <link rel="stylesheet" href="/Css/Style.css">
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="logotipo">
+                <img src="/Imagenes/Logo/Logo.png" alt="Logotipo de empresa">
+            </div>
+            <h1>Bienvenidos a mi pagina web</h1>
+        </header>
+
+            <nav>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="/Paginas/Index.html">Inicio</a></li>
+                    <li><a href="/Paginas/ComoLlegar.html">Como llegar</a></li>
+                    <li><a href="/Paginas/Registro.html">Registro</a></li>
+                    <li><a href="/Paginas/PagFav.html">Paginas Favoritas</a></li>
+                    <li><a href="/Paginas/Pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </nav>
+
+            <div>
+
+                <h2>Registro</h2>
+                
+                <br>
+                
+                    <form onsubmit="return validarFormulario()">
+                        <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre"><br>
+                        <label for="contrasena">Contraseña:</label><br>
+                            <input type="password" id="contrasena" name="contrasena"><br>
+                        <label for="confirmContrasena">Confirmar Contraseña:</label><br>
+                            <input type="password" id="confirmContrasena" name="confirmContrasena"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                    <script src="/Scripts/Contraseña.js"></script>
+            </div>
+
+            <br> <hr>
+
+            <div id="PagSig">
+                
+                <a href="/Paginas/SubPaginasScript/Primos.html">Primos -> </a>
+            </div>
+
+            <div id="PagAnt">
+                
+                <a href="/Paginas/Scripts.html"> <- Scripts </a>
+            </div>
+
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+
+    </body>
+</html>
