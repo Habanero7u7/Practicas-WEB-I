@@ -171,3 +171,8 @@ footer h2 {
 #imagenProyector {
     width: 500px;
 }
+
+#listaphp li{
+    font-size: 25px;
+    padding: 15px;
+}
