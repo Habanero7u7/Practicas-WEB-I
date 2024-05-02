@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRACTICA PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Css/Style.css">
 </head>
 
 <body>
     <header>
-        <h1>1</h1>
+        <h1>Compras</h1>
     </header>
     
 
      <nav>
+     <h2>Practicas PHP</h2>
         <ul>
-     <a href="index.html">Regresar a las paginas</a> 
+            <li><a href="/Paginas/PHP.html">Regresar a las paginas</a></li> 
         </ul>
      </nav>
 
@@ -72,13 +73,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Total ya con IVA: $" . number_format($totalConIVA, 2);
 }
 ?>
-
-
  
     <footer>
-        <p>Alexa Darlin Nandi de la Rosa 22110138</p>
+        <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
     </footer>
-
 
 </body>
 </html>
