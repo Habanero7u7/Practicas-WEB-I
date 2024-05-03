@@ -7,7 +7,7 @@
     </head>
 
     <body>
-    <header>
+        <header>
             <h1>Practica CRUD</h1>
         </header>
         
