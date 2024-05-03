@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>PHP y MySQL</title>
+        <link href="/Css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Practica CRUD</h1>
+    </header>
+    
+     <nav>
+        <h2>Borrar Usuario</h2>
+        <ul>
+            <li><a href="/PHP/CRUD/usuarios.php">Regresar</a></li> 
+        </ul>
+     </nav>
+
+    <form action="/PHP/CRUD/Usuarios/borrar.php" method="get">
+        <p>Escriba los datos del registro a borrar:</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Clave:</td>
+                    <td>
+                        <input type="text" name="clave" size="40" maxlength="10" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <input type="submit" value="borrar" />
+        </p>
+    </form>
+    <div id="contenido">
+    </div>
+
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+</body>
+
+</html>
