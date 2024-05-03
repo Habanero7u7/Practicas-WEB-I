@@ -55,12 +55,9 @@ if (isset($clave) && isset($nombre) && isset($direccion) && isset($telefono)) {
 	echo "Debes llenar todos los datos \n";
 }
 ?>
-        </div>
-
-        <div id="contenido">
-        </div>
-        <div id="pie">
-            <h2>Todos los derechos reservados</h2>
-        </div>
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+        
     </body>
 </html>

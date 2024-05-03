@@ -2,18 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Bases de datos y MySQL - Inicio</title>
-        <link href="../css/comun.css" rel="stylesheet" type="text/css" />
+        <title>PHP y MySQL</title>
+        <link href="/Css/Style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
-        <div id="encabezado">
-            <h1>Bases de datos y MySQL - Inicio</h1>
-        </div>
-        <div id="menu">
+    <header>
+            <h1>Practica CRUD</h1>
+        </header>
+        
+         <nav>
+            <h2>Modificar Usuario</h2>
             <ul>
-                <li><a href="../usuarios.php">P&aacute;gina inicial</a></li>
+                <li><a href="/PHP/CRUD/usuarios.php">Regresar</a></li> 
             </ul>
+         </nav>
+
             <?php
             include '../conexion.php';
 
@@ -50,12 +54,10 @@
                 echo "Debes llenar todos los datos \n";
             }
             ?>
-        </div>
 
-        <div id="contenido">
-        </div>
-        <div id="pie">
-            <h2>Todos los derechos reservados</h2>
-        </div>
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+        
     </body>
 </html>

@@ -51,10 +51,9 @@ if (!$result) {
 
 mysqli_close($link);
 ?>
-        </div>
-
-        <div id="pie">
-            <h2>Todos los derechos reservados</h2>
-        </div>
+        <footer>
+            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+        </footer>
+        
     </body>
 </html>
