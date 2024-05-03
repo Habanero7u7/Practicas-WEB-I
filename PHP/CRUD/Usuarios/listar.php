@@ -22,7 +22,7 @@
             <p>Listado completo de registros:</p>
             <?php
 
-include '/PHP/Conexion/conexion.php';
+include '../conexion.php';
 
 //1.- Conexión al servidor de bases de datos interface procedimental
 $link = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
