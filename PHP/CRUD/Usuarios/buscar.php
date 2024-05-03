@@ -7,18 +7,22 @@
     </head>
 
     <body>
-    <header>
+        <header>
             <h1>Practica CRUD</h1>
         </header>
         
          <nav>
-            <h2>Modificar Usuario</h2>
+            <h2>Buscar Usuario</h2>
             <ul>
                 <li><a href="/PHP/CRUD/usuarios.php">Regresar</a></li> 
             </ul>
          </nav>
 
+         <div id="contenido">
+            <p>El usuario es:</p>
+
             <?php
+
             include '../conexion.php';
 
             ///1.- Conexión al servidor de bases de datos interface procedimental
@@ -31,10 +35,8 @@
             if (isset($clave)) {
 
                 $sql = "select * from usuarios where clave = $clave";
-                //echo $sql;
 
                 $result = mysqli_query($link,$sql);
-
 
                 if (!$result) {
                     die('Consulta no v&aacute;lida: ' . mysqli_error($link));
@@ -45,10 +47,11 @@
                         echo "<tr><td>Clave</td><td>Nombre</td><td>Direcci&oacute;n</td><td>Telefono</td></tr> \n";
 
                         while ($row = mysqli_fetch_row($result)) {
-                            echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td></tr> \n";
+                            echo "<tr><td>$clave</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td></tr> \n";
                         }
-                    } else {
 
+                        echo "</table>\n";
+                    } else {
                         echo "<p> El dato no existe </p>";
                     }
                 }
@@ -56,10 +59,12 @@
             mysqli_close($link);
             
             ?>
+
+</div>
             
-        <footer>
-            <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
-        </footer>
+<footer>            
+    <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
+</footer>
 
     </body>
 </html>

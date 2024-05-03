@@ -20,6 +20,7 @@
 
         <div id="contenido">
             <p>Listado completo de registros:</p>
+
             <?php
 
 include '../conexion.php';
@@ -31,7 +32,6 @@ if (mysqli_connect_errno()) {
 }
 
 $sql = "SELECT * from usuarios";
-//echo $sql;
 
 $result = mysqli_query($link, $sql);
 
@@ -41,6 +41,7 @@ if (!$result) {
 
 	echo "<table border = '1'> \n";
 	echo "<tr><th>Clave</th><th>Nombre</th><th>Direcci&oacute;n</th><th>Telefono</th></tr> \n";
+
 	while ($row = mysqli_fetch_row($result)) {
 		$clave = $row[0];
 		echo "<tr><td>$clave</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td><a href=borrar1.php?clave=$clave>borrar</a></td><td><a href=modificar1.php?clave=$clave>modificar</a></td></tr> \n";
@@ -51,9 +52,11 @@ if (!$result) {
 
 mysqli_close($link);
 ?>
+        </div>
+
         <footer>
             <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
         </footer>
-        
+
     </body>
 </html>

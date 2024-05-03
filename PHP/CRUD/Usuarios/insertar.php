@@ -17,6 +17,7 @@
                 <li><a href="/PHP/CRUD/usuarios.php">Regresar</a></li> 
             </ul>
          </nav>
+         
             <?php
             
 include '../conexion.php';
@@ -58,6 +59,6 @@ if (isset($clave) && isset($nombre) && isset($direccion) && isset($telefono)) {
         <footer>
             <h2>Creado por Fabian Navarro --- CETI --- 5°N ---</h2>
         </footer>
-        
+
     </body>
 </html>

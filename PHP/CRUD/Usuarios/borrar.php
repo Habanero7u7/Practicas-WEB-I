@@ -37,9 +37,9 @@ if (isset($clave)) {
 	$result = mysqli_query($link, $sql);
 
 	if (mysqli_affected_rows($link) > 0) {
-		echo "La informaci&oacute;n se ha borrado.\n";
+		echo " La informaci&oacute;n se ha borrado.\n";
 	} else {
-		die('Consulta no v&aacute;lida: ' . mysqli_error($link));
+		die(' Consulta no v&aacute;lida: ' . mysqli_error($link));
 	}
 }
 
