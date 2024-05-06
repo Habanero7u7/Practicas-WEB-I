@@ -13,7 +13,7 @@
         </header>
         
          <nav>
-            <h2>Modificar Usuario</h2>
+            <h2>Borrar Usuario</h2>
             <ul>
                 <li><a href="/PHP/CRUD/usuarios.php">Regresar</a></li> 
             </ul>
